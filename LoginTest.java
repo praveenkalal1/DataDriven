@@ -22,7 +22,7 @@ private final Logger log= LoggerHelper.getLogger(LoginTest.class);
 		driver.get(config.getWebsite());
 		System.out.println("driver=" + driver); 
 		LoginPage loginpage=new LoginPage(driver);
-		
+		System.out.println("");
 		loginpage.enterEmailAddress("emailAddress");
 		boolean status=loginpage.verifySuccessLoginMsg();
 		
